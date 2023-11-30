@@ -7,12 +7,12 @@ esbuildServe({
     sourcemap: true,
     outfile: 'dist/bundle.js',
     define: {
-        'process.dev.NODE_ENV':'"development"',
+        'process.env.NODE_ENV':'"development"',
         'process.env.DEBUG': 'false'
     }
 },
     {
-        port: 3005,
+        port: 3008,
         root: '.'
     }
 )
